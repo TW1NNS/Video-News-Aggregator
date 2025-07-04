@@ -1,1 +1,20 @@
+{
+  "openai_api_key": "YOUR_OPENAI_API_KEY",
+  "sites": [
+    {
+      "name": "Newsshooter",
+      "base_url": "https://www.newsshooter.com/",
+      "article_list_selector": ".td_module_16 .entry-title a",
+      "content_selector": "article"
+    },
+    {
+      "name": "NoFilmSchool",
+      "base_url": "https://nofilmschool.com/",
+      "article_list_selector": "h3.node-title a",
+      "content_selector": ".node-content"
+    }
+  ],
+  "max_articles": 10,
+  "database_path": "articles.db"
+}
 
