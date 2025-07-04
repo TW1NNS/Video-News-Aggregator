@@ -93,8 +93,6 @@ def job():
 
 # --- Scheduler (when run locally) ---
 if __name__ == '__main__':
-    schedule.every().monday.at('08:00').do(job)
-    print("Scheduler started. Waiting for next run...")
-    while True:
-        schedule.run_pending()
-        time.sleep(30)
+    job()
+
+    
