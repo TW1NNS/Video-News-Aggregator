@@ -2,12 +2,6 @@
   "openai_api_key": "YOUR_OPENAI_API_KEY",
   "sites": [
     {
-      "name": "CineD",
-      "base_url": "https://www.cined.com/news/",
-      "article_list_selector": "article h2 a",
-      "content_selector": "article"
-    },
-    {
       "name": "Newsshooter",
       "base_url": "https://www.newsshooter.com/",
       "article_list_selector": ".td-block-span6 .entry-title a",
