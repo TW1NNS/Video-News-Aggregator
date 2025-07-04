@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import openai
 import schedule
 import os
+import traceback
 
 # --- Load config ---
 with open('config.json') as f:
@@ -85,8 +86,9 @@ def job():
                 summary = summarize(content)
                 save_article(site['name'], art['title'], art['url'], summary)
                 time.sleep(1)
-        except Exception as e:
+                except Exception as e:
             print(f"Error on {site['name']}: {e}")
+            traceback.print_exc()
     print("Done.")
 
 # --- Scheduler (when run locally) ---
