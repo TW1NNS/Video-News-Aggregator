@@ -4,7 +4,7 @@
     {
       "name": "Newsshooter",
       "base_url": "https://www.newsshooter.com/",
-      "article_list_selector": ".td-block-span6 .entry-title a",
+      "article_list_selector": ".td-module-title a",
       "content_selector": ".td-post-content"
     }
   ],
